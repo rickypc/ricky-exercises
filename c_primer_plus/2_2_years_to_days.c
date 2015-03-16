@@ -1,7 +1,6 @@
 /*
  * Convert years to days
- * Copyright (c) 2008 Ricky Wirapratigta
- * $Id$
+ * Copyright (c) 2008, 2015 Richard Huang. All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,14 +17,15 @@
 */
 
 #include <stdio.h>
+#define COPYRIGHT "Copyright (c) 2008, 2015 Richard Huang. All rights reserved.\n" \
+                  "This program comes with ABSOLUTELY NO WARRANTY.\n" \
+                  "This is free software, and you are welcome to redistribute it\n" \
+                  "under certain conditions.\n\n"
 #define YEAR_IN_DAYS 365
 
 int main(void) {
     int years;
-    printf("Copyright (c) 2008 Ricky Wirapratigta\nThis program comes "
-        "with ABSOLUTELY NO WARRANTY.\nThis is free software, "
-        "and you are welcome to redistribute it\nunder certain "
-        "conditions.\n\n");
+    printf(COPYRIGHT);
     printf("How many years old are you now?\n");
     scanf("%d", &years);
     printf("You are %d days old.\n", years * YEAR_IN_DAYS);
